@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backgroundImageView = UIImageView(image: UIImage(named:"funBackground"))
-        backgroundImageView.contentMode = .ScaleAspectFit
+        let backgroundImageView = UIImageView(image: UIImage(named:"blueBackground"))
+        backgroundImageView.frame = view.bounds
+        backgroundImageView.contentMode = .ScaleAspectFill
         view.addSubview(backgroundImageView)
         
         let imageView = PinchZoomImageView(image: UIImage(named: "2"))
