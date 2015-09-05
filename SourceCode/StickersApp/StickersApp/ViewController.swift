@@ -13,12 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backGroundImageView = UIImageView(image: UIImage(named:"blueBackground"))
-        view.addSubview(backGroundImageView)
+        let backgroundImageView = UIImageView(image: UIImage(named:"funBackground"))
+        backgroundImageView.contentMode = .ScaleAspectFit
+        view.addSubview(backgroundImageView)
         
-        let imageView = PinchZoomImageView(image: UIImage(named: "1"))
-        let imageView1 = PinchZoomImageView(image: UIImage(named: "2"))
-        let imageView2 = PinchZoomImageView(image: UIImage(named: "3"))
+        let imageView = PinchZoomImageView(image: UIImage(named: "2"))
+        let imageView1 = PinchZoomImageView(image: UIImage(named: "3"))
+        let imageView2 = PinchZoomImageView(image: UIImage(named: "4"))
         
     
         imageView.frame.origin = randomOriginPoint()
