@@ -18,11 +18,18 @@
                                 <animations/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="rr9-Eg-d7M"/>
-                                    <barButtonItem image="add" id="R4F-xk-arO">
+                                    <barButtonItem image="plus" id="R4F-xk-arO">
                                         <connections>
                                             <action selector="actionAddImage:" destination="BYZ-38-t0r" id="RZX-cV-iB7"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="qU7-9F-eSq"/>
+                                    <barButtonItem image="minus" id="27H-ed-sOw">
+                                        <connections>
+                                            <action selector="actionDeleteImage:" destination="BYZ-38-t0r" id="Zcf-Fd-bXT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NqT-c9-Z5f"/>
                                 </items>
                                 <color key="barTintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
@@ -42,6 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="24" height="24"/>
+        <image name="minus" width="32" height="32"/>
+        <image name="plus" width="32" height="32"/>
     </resources>
 </document>

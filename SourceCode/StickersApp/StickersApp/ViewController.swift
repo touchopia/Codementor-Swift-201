@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var toolbar: UIToolbar!
     
+    var stickersArray : Array<UIImageView> = [];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,10 +25,36 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionAddImage(sender: AnyObject) {
+        
+        // 1
         let imageView = PinchZoomImageView(image: UIImage(named: "1"))
+        
+        // 2
         imageView.frame.origin = randomOriginPoint()
+        
+        // 3
         view.addSubview(imageView)
+        
+        // 4
+        stickersArray.append(imageView)
+        
         view.bringSubviewToFront(toolbar)
+    }
+    
+    @IBAction func actionDeleteImage(sender: AnyObject) {
+
+        // 1
+        let stickersCount = stickersArray.count
+        
+        if(stickersCount > 0) {
+            
+            // 2
+            if let imageView = stickersArray[0] as UIImageView? {
+                imageView.removeFromSuperview()
+                stickersArray.removeFirst()
+            }
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
