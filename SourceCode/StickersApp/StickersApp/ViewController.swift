@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var toolbar: UIToolbar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,21 +19,16 @@ class ViewController: UIViewController {
         backgroundImageView.frame = view.bounds
         backgroundImageView.contentMode = .ScaleAspectFill
         view.addSubview(backgroundImageView)
-        
-        let imageView = PinchZoomImageView(image: UIImage(named: "2"))
-        let imageView1 = PinchZoomImageView(image: UIImage(named: "3"))
-        let imageView2 = PinchZoomImageView(image: UIImage(named: "4"))
-        
-    
-        imageView.frame.origin = randomOriginPoint()
-        imageView1.frame.origin = randomOriginPoint()
-        imageView2.frame.origin = randomOriginPoint()
-        
-        view.addSubview(imageView)
-        view.addSubview(imageView1)
-        view.addSubview(imageView2)
+        view.bringSubviewToFront(toolbar)
     }
 
+    @IBAction func actionAddImage(sender: AnyObject) {
+        let imageView = PinchZoomImageView(image: UIImage(named: "1"))
+        imageView.frame.origin = randomOriginPoint()
+        view.addSubview(imageView)
+        view.bringSubviewToFront(toolbar)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
