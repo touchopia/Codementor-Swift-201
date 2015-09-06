@@ -18,18 +18,19 @@
                                 <animations/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="rr9-Eg-d7M"/>
-                                    <barButtonItem image="plus" id="R4F-xk-arO">
+                                    <barButtonItem image="icon-plus" id="R4F-xk-arO">
                                         <connections>
                                             <action selector="actionAddImage:" destination="BYZ-38-t0r" id="RZX-cV-iB7"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="qU7-9F-eSq"/>
-                                    <barButtonItem image="minus" id="27H-ed-sOw">
+                                    <barButtonItem image="icon-minus" id="27H-ed-sOw">
                                         <connections>
                                             <action selector="actionDeleteImage:" destination="BYZ-38-t0r" id="Zcf-Fd-bXT"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NqT-c9-Z5f"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1fG-tL-wVe"/>
+                                    <barButtonItem image="icon-bg" id="YNR-Wt-8kc"/>
                                 </items>
                                 <color key="barTintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
@@ -49,7 +50,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="minus" width="32" height="32"/>
-        <image name="plus" width="32" height="32"/>
+        <image name="icon-bg" width="32" height="24"/>
+        <image name="icon-minus" width="32" height="32"/>
+        <image name="icon-plus" width="32" height="32"/>
     </resources>
 </document>
