@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>StickersApp.xcscheme</key>
+		<key>StickerApp-Starter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6C69A16C1B96AF8F00097238</key>
+		<key>6C7152C81BA7880A004605F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

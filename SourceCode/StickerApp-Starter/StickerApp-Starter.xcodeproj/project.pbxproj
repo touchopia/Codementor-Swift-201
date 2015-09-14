@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C69A1711B96AF8F00097238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C69A1701B96AF8F00097238 /* AppDelegate.swift */; };
-		6C69A1731B96AF8F00097238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C69A1721B96AF8F00097238 /* ViewController.swift */; };
-		6C69A1761B96AF8F00097238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C69A1741B96AF8F00097238 /* Main.storyboard */; };
-		6C69A1781B96AF8F00097238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C69A1771B96AF8F00097238 /* Assets.xcassets */; };
-		6C69A1831B96AFBA00097238 /* PinchZoomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C69A1821B96AFBA00097238 /* PinchZoomImageView.swift */; settings = {ASSET_TAGS = (); }; };
+		6C7152CD1BA7880A004605F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7152CC1BA7880A004605F7 /* AppDelegate.swift */; };
+		6C7152CF1BA7880A004605F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7152CE1BA7880A004605F7 /* ViewController.swift */; };
+		6C7152D21BA7880A004605F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7152D01BA7880A004605F7 /* Main.storyboard */; };
+		6C7152D41BA7880A004605F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7152D31BA7880A004605F7 /* Assets.xcassets */; };
+		6C7152D71BA7880A004605F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7152D51BA7880A004605F7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C69A16D1B96AF8F00097238 /* StickersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C69A1701B96AF8F00097238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C69A1721B96AF8F00097238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6C69A1751B96AF8F00097238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6C69A1771B96AF8F00097238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6C69A17C1B96AF8F00097238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C69A1821B96AFBA00097238 /* PinchZoomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinchZoomImageView.swift; sourceTree = "<group>"; };
+		6C7152C91BA7880A004605F7 /* StickerApp-Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StickerApp-Starter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7152CC1BA7880A004605F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C7152CE1BA7880A004605F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C7152D11BA7880A004605F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C7152D31BA7880A004605F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C7152D61BA7880A004605F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C7152D81BA7880A004605F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6C69A16A1B96AF8F00097238 /* Frameworks */ = {
+		6C7152C61BA7880A004605F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,70 +35,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6C69A1641B96AF8F00097238 = {
+		6C7152C01BA7880A004605F7 = {
 			isa = PBXGroup;
 			children = (
-				6C69A16F1B96AF8F00097238 /* StickersApp */,
-				6C69A16E1B96AF8F00097238 /* Products */,
+				6C7152CB1BA7880A004605F7 /* StickerApp-Starter */,
+				6C7152CA1BA7880A004605F7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6C69A16E1B96AF8F00097238 /* Products */ = {
+		6C7152CA1BA7880A004605F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C69A16D1B96AF8F00097238 /* StickersApp.app */,
+				6C7152C91BA7880A004605F7 /* StickerApp-Starter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C69A16F1B96AF8F00097238 /* StickersApp */ = {
+		6C7152CB1BA7880A004605F7 /* StickerApp-Starter */ = {
 			isa = PBXGroup;
 			children = (
-				6C69A1701B96AF8F00097238 /* AppDelegate.swift */,
-				6C69A1721B96AF8F00097238 /* ViewController.swift */,
-				6C69A1821B96AFBA00097238 /* PinchZoomImageView.swift */,
-				6C69A1741B96AF8F00097238 /* Main.storyboard */,
-				6C69A1771B96AF8F00097238 /* Assets.xcassets */,
-				6C69A17C1B96AF8F00097238 /* Info.plist */,
+				6C7152CC1BA7880A004605F7 /* AppDelegate.swift */,
+				6C7152CE1BA7880A004605F7 /* ViewController.swift */,
+				6C7152D01BA7880A004605F7 /* Main.storyboard */,
+				6C7152D31BA7880A004605F7 /* Assets.xcassets */,
+				6C7152D51BA7880A004605F7 /* LaunchScreen.storyboard */,
+				6C7152D81BA7880A004605F7 /* Info.plist */,
 			);
-			path = StickersApp;
+			path = "StickerApp-Starter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C69A16C1B96AF8F00097238 /* StickersApp */ = {
+		6C7152C81BA7880A004605F7 /* StickerApp-Starter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C69A17F1B96AF8F00097238 /* Build configuration list for PBXNativeTarget "StickersApp" */;
+			buildConfigurationList = 6C7152DB1BA7880A004605F7 /* Build configuration list for PBXNativeTarget "StickerApp-Starter" */;
 			buildPhases = (
-				6C69A1691B96AF8F00097238 /* Sources */,
-				6C69A16A1B96AF8F00097238 /* Frameworks */,
-				6C69A16B1B96AF8F00097238 /* Resources */,
+				6C7152C51BA7880A004605F7 /* Sources */,
+				6C7152C61BA7880A004605F7 /* Frameworks */,
+				6C7152C71BA7880A004605F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StickersApp;
-			productName = StickersApp;
-			productReference = 6C69A16D1B96AF8F00097238 /* StickersApp.app */;
+			name = "StickerApp-Starter";
+			productName = "StickerApp-Starter";
+			productReference = 6C7152C91BA7880A004605F7 /* StickerApp-Starter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6C69A1651B96AF8F00097238 /* Project object */ = {
+		6C7152C11BA7880A004605F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Touchopia, LLC";
 				TargetAttributes = {
-					6C69A16C1B96AF8F00097238 = {
+					6C7152C81BA7880A004605F7 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = 6C69A1681B96AF8F00097238 /* Build configuration list for PBXProject "StickersApp" */;
+			buildConfigurationList = 6C7152C41BA7880A004605F7 /* Build configuration list for PBXProject "StickerApp-Starter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -106,54 +106,62 @@
 				en,
 				Base,
 			);
-			mainGroup = 6C69A1641B96AF8F00097238;
-			productRefGroup = 6C69A16E1B96AF8F00097238 /* Products */;
+			mainGroup = 6C7152C01BA7880A004605F7;
+			productRefGroup = 6C7152CA1BA7880A004605F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C69A16C1B96AF8F00097238 /* StickersApp */,
+				6C7152C81BA7880A004605F7 /* StickerApp-Starter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6C69A16B1B96AF8F00097238 /* Resources */ = {
+		6C7152C71BA7880A004605F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C69A1781B96AF8F00097238 /* Assets.xcassets in Resources */,
-				6C69A1761B96AF8F00097238 /* Main.storyboard in Resources */,
+				6C7152D71BA7880A004605F7 /* LaunchScreen.storyboard in Resources */,
+				6C7152D41BA7880A004605F7 /* Assets.xcassets in Resources */,
+				6C7152D21BA7880A004605F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C69A1691B96AF8F00097238 /* Sources */ = {
+		6C7152C51BA7880A004605F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C69A1831B96AFBA00097238 /* PinchZoomImageView.swift in Sources */,
-				6C69A1731B96AF8F00097238 /* ViewController.swift in Sources */,
-				6C69A1711B96AF8F00097238 /* AppDelegate.swift in Sources */,
+				6C7152CF1BA7880A004605F7 /* ViewController.swift in Sources */,
+				6C7152CD1BA7880A004605F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6C69A1741B96AF8F00097238 /* Main.storyboard */ = {
+		6C7152D01BA7880A004605F7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6C69A1751B96AF8F00097238 /* Base */,
+				6C7152D11BA7880A004605F7 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C7152D51BA7880A004605F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7152D61BA7880A004605F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6C69A17D1B96AF8F00097238 /* Debug */ = {
+		6C7152D91BA7880A004605F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -197,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		6C69A17E1B96AF8F00097238 /* Release */ = {
+		6C7152DA1BA7880A004605F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,24 +242,26 @@
 			};
 			name = Release;
 		};
-		6C69A1801B96AF8F00097238 /* Debug */ = {
+		6C7152DC1BA7880A004605F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = StickersApp/Info.plist;
+				INFOPLIST_FILE = "StickerApp-Starter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.touchopia.StickersApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.touchopia.StickerApp-Starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		6C69A1811B96AF8F00097238 /* Release */ = {
+		6C7152DD1BA7880A004605F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = StickersApp/Info.plist;
+				INFOPLIST_FILE = "StickerApp-Starter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.touchopia.StickersApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.touchopia.StickerApp-Starter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -259,25 +269,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C69A1681B96AF8F00097238 /* Build configuration list for PBXProject "StickersApp" */ = {
+		6C7152C41BA7880A004605F7 /* Build configuration list for PBXProject "StickerApp-Starter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C69A17D1B96AF8F00097238 /* Debug */,
-				6C69A17E1B96AF8F00097238 /* Release */,
+				6C7152D91BA7880A004605F7 /* Debug */,
+				6C7152DA1BA7880A004605F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C69A17F1B96AF8F00097238 /* Build configuration list for PBXNativeTarget "StickersApp" */ = {
+		6C7152DB1BA7880A004605F7 /* Build configuration list for PBXNativeTarget "StickerApp-Starter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C69A1801B96AF8F00097238 /* Debug */,
-				6C69A1811B96AF8F00097238 /* Release */,
+				6C7152DC1BA7880A004605F7 /* Debug */,
+				6C7152DD1BA7880A004605F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6C69A1651B96AF8F00097238 /* Project object */;
+	rootObject = 6C7152C11BA7880A004605F7 /* Project object */;
 }
