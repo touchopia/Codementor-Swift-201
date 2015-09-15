@@ -18,6 +18,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        characterImageView.userInteractionEnabled = true
+        
         let characterOneTapGesture = UITapGestureRecognizer(target: self, action:Selector("handleTap:"))
         characterOneTapGesture.delegate = self
         characterImageView.addGestureRecognizer(characterOneTapGesture)
