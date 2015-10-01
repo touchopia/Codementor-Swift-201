@@ -29,24 +29,37 @@ class PinchZoomImageView: UIImageView, UIGestureRecognizerDelegate {
     
     func initialize() {
         
-        // Important
+        // Important for allowing user interaction
+        
         self.userInteractionEnabled = true
         self.multipleTouchEnabled = true
         self.exclusiveTouch = true
 
+        
+        // Aspect Fit the Image
         self.contentMode = .ScaleAspectFit
+        
+        // Important: One gesture recognizer type is required to monitor this UIImageView
+        
+        // 1. Add the Tap Gesture
         
         let tapGesture = UITapGestureRecognizer(target: self, action:Selector("handleTap:"))
         tapGesture.delegate = self
         self.addGestureRecognizer(tapGesture)
+
+        // 2. Add the Pan Gesture
         
         let panGesture = UIPanGestureRecognizer(target: self, action:Selector("handlePan:"))
         panGesture.delegate = self
         self.addGestureRecognizer(panGesture)
         
+        // 3. Add the Pinch Gesture
+        
         let pinchGesture = UIPinchGestureRecognizer(target: self, action:Selector("handlePinch:"))
         pinchGesture.delegate = self
         self.addGestureRecognizer(pinchGesture)
+
+        // 4. Add the Rotate Gesture
         
         let rotateGesture = UIRotationGestureRecognizer(target: self, action:Selector("handleRotate:"))
         rotateGesture.delegate = self

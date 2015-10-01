@@ -11,35 +11,25 @@ import ImageIO
 
 class BackgroundViewController: UIViewController {
     
-    var backgroundImagesArray : Array <UIImageView> = []
+    var backgroundImageString : String = ""
 
+    @IBOutlet weak var buttonTwo: UIButton!
+    @IBOutlet weak var buttonOne: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        backgroundImagesArray = [
-            UIImageView.init(image: UIImage.init(named: "funBackground")),
-            UIImageView.init(image: UIImage.init(named: "cityBackground")),
-            UIImageView.init(image: UIImage.init(named: "castleBackground"))
-        ];
-        
     }
     
-    func createThumbnail(image: UIImage) -> UIImageView {
+    @IBAction func chooseBackground(sender: UIButton) {
         
-        // 1
-        let imageView = UIImageView.init(image: image)
+        if sender.isEqual(buttonOne) {
+            backgroundImageString = "funBackground"
+        }
+        else if sender.isEqual(buttonTwo) {
+            backgroundImageString = "greenBackground"
+        }
         
-        // 2
-        imageView.frame = CGRectMake(0,0,200,100)
-        
-        // 3
-        imageView.contentMode = .ScaleAspectFit
-        
-        // 4
-        imageView.image = image
-        
-        return imageView
+        self.performSegueWithIdentifier("unwindIdentifier", sender: self)
     }
-
-
+    
 }

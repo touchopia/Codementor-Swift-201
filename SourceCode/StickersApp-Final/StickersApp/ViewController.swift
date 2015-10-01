@@ -12,16 +12,35 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var toolbar: UIToolbar!
     
+    var backgroundImageView : UIImageView?
+    var backgroundImageString : String = ""
+    
     var stickersArray : Array<UIImageView> = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backgroundImageView = UIImageView(image: UIImage(named:"blueBackground"))
-        backgroundImageView.frame = view.bounds
-        backgroundImageView.contentMode = .ScaleAspectFill
-        view.addSubview(backgroundImageView)
+        backgroundImageString = "blueBackground"
+        updateBackgroundImage()
+        
         view.bringSubviewToFront(toolbar)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        updateBackgroundImage()
+    }
+    
+    func updateBackgroundImage() {
+        
+        // is there a backgroundImageString available?
+        
+        backgroundImageView?.removeFromSuperview()
+ 
+        backgroundImageView = UIImageView(image: UIImage(named:backgroundImageString))
+        
+        backgroundImageView?.frame = view.bounds
+        backgroundImageView?.contentMode = .ScaleAspectFill
+        view.insertSubview(backgroundImageView!, atIndex: 0)
     }
 
     @IBAction func actionAddImage(sender: AnyObject) {
@@ -57,15 +76,19 @@ class ViewController: UIViewController {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func randomOriginPoint() -> CGPoint {
         let screenWidth = UInt32(self.view.frame.size.width / 2)
         
         return CGPointMake(CGFloat(arc4random_uniform(screenWidth)), CGFloat(arc4random_uniform(screenWidth)))
+    }
+    
+    @IBAction func unwindToVC(segue:UIStoryboardSegue) {
+        if segue.identifier == "unwindIdentifier" {
+            if let controller = segue.sourceViewController as? BackgroundViewController {
+                backgroundImageString = controller.backgroundImageString
+                updateBackgroundImage()
+            }
+        }
     }
 
 }
