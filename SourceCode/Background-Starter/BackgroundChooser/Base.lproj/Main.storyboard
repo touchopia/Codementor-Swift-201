@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4In-2c-Azp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Background View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BackgroundChooser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BackgroundViewController" customModule="BackgroundChooser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,12 +16,117 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPo-lv-eij">
+                                <rect key="frame" x="200" y="20" width="200" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8nS-NH-qpe"/>
+                                    <constraint firstAttribute="height" constant="100" id="OIg-ey-M2p"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="castleBackground">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="150" y="360" width="300" height="80"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="374" y="226" width="300" height="80"/>
+                                </variation>
+                                <connections>
+                                    <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esJ-Kw-3s3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byO-j5-WoR">
+                                <rect key="frame" x="200" y="142" width="200" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5bg-0B-DxD"/>
+                                    <constraint firstAttribute="width" constant="200" id="BMi-Q5-TyJ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="funBackground">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdx-Pg-beC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbm-4x-i5J">
+                                <rect key="frame" x="200" y="259" width="200" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="IWO-FO-YPp"/>
+                                    <constraint firstAttribute="height" constant="100" id="zlX-LL-YVv"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="cityBackground">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRd-lR-xti"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mbm-4x-i5J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0cd-UZ-fNA"/>
+                            <constraint firstItem="Mbm-4x-i5J" firstAttribute="top" secondItem="byO-j5-WoR" secondAttribute="bottom" constant="17" id="6wb-Pz-5lQ"/>
+                            <constraint firstItem="hPo-lv-eij" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d4m-F6-YpB"/>
+                            <constraint firstItem="byO-j5-WoR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oIf-qd-gmY"/>
+                            <constraint firstItem="byO-j5-WoR" firstAttribute="top" secondItem="hPo-lv-eij" secondAttribute="bottom" constant="22" id="qAA-uP-tFk"/>
+                            <constraint firstItem="hPo-lv-eij" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="snQ-T5-paH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="1jD-tO-cja" kind="unwind" identifier="unwindIdentifier" unwindAction="unwindToVC:" id="nqX-eS-jHo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="1jD-tO-cja" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="91" y="93"/>
+            <point key="canvasLocation" x="561" y="-141"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="5AD-o8-HhM">
+            <objects>
+                <viewController id="4In-2c-Azp" customClass="HomeViewController" customModule="BackgroundChooser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7jE-Fl-nFE"/>
+                        <viewControllerLayoutGuide type="bottom" id="7pb-g4-ocL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ps3-e1-tG7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPL-di-zHU">
+                                <rect key="frame" x="220" y="280" width="160" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3YY-2N-Fon"/>
+                                    <constraint firstAttribute="width" constant="160" id="p9V-zP-JSe"/>
+                                </constraints>
+                                <state key="normal" title="Background Chooser">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="ChoooserIdentifier" id="OaA-xK-gUF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wPL-di-zHU" firstAttribute="centerY" secondItem="ps3-e1-tG7" secondAttribute="centerY" id="Bp0-cV-wuM"/>
+                            <constraint firstItem="wPL-di-zHU" firstAttribute="centerX" secondItem="ps3-e1-tG7" secondAttribute="centerX" id="faG-PV-zRU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXm-0x-bEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="-123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="castleBackground" width="1136" height="940"/>
+        <image name="cityBackground" width="1136" height="940"/>
+        <image name="funBackground" width="1136" height="940"/>
+    </resources>
 </document>
