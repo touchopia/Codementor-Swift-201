@@ -18,16 +18,15 @@ class BackgroundViewController: UIViewController {
         
     }
     @IBAction func chooseBackground(sender: UIButton) {
-        if sender.tag == 1 {
-            backgroundImageString = "castleBackground"
-        }
-        else if sender.tag == 2 {
-            backgroundImageString = "funBackground"
-        }
-        else {
-            backgroundImageString = "cityBackground"
-        }
         
+        switch(sender.tag) {
+            case 1: backgroundImageString = "redBackground"
+            case 2: backgroundImageString = "blueBackground"
+            case 3: backgroundImageString = "greenBackground"
+            case 4: backgroundImageString = "castleBackground"
+            case 5: backgroundImageString = "funBackground"
+            default: backgroundImageString = "cityBackground"
+        }
         self.performSegueWithIdentifier("unwindIdentifier", sender: self)
     }
 }
