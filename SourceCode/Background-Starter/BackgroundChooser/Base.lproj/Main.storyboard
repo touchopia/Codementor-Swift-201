@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B22c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4In-2c-Azp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4In-2c-Azp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Background View Controller-->
@@ -18,11 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-g2-M9O">
-                                <rect key="frame" x="20" y="20" width="200" height="180"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-g2-M9O">
+                                <rect key="frame" x="20" y="28" width="200" height="100"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="a5V-73-ZyN"/>
                                     <constraint firstAttribute="width" constant="200" id="d6Q-Ew-qQJ"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="city_thumb"/>
@@ -32,8 +30,8 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zED-Fu-TRx">
-                                <rect key="frame" x="20" y="420" width="200" height="180"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zED-Fu-TRx">
+                                <rect key="frame" x="20" y="480" width="200" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1uM-VD-SXW"/>
@@ -51,8 +49,8 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VE3-H6-XUa">
-                                <rect key="frame" x="380" y="20" width="200" height="180"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VE3-H6-XUa">
+                                <rect key="frame" x="380" y="28" width="200" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="JFV-yy-leD"/>
@@ -66,13 +64,13 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whY-fw-1eB">
-                                <rect key="frame" x="20" y="220" width="200" height="180"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whY-fw-1eB">
+                                <rect key="frame" x="20" y="250" width="200" height="100"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="castle_thumb"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD5-75-W84">
-                                <rect key="frame" x="380" y="420" width="200" height="180"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD5-75-W84">
+                                <rect key="frame" x="380" y="480" width="200" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="MKS-rU-XCf"/>
@@ -90,46 +88,14 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX2-ks-VPG">
-                                <rect key="frame" x="380" y="220" width="200" height="180"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX2-ks-VPG">
+                                <rect key="frame" x="380" y="250" width="200" height="100"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="red_thumb"/>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zED-Fu-TRx" secondAttribute="bottom" id="3Xi-vF-5Ae"/>
-                            <constraint firstItem="G0h-g2-M9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5eG-Qf-u3k"/>
-                            <constraint firstItem="VE3-H6-XUa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6Nk-ac-E2B"/>
-                            <constraint firstItem="eD5-75-W84" firstAttribute="height" secondItem="BX2-ks-VPG" secondAttribute="height" id="7uL-4B-Tin"/>
-                            <constraint firstItem="BX2-ks-VPG" firstAttribute="height" secondItem="VE3-H6-XUa" secondAttribute="height" id="9QO-uu-BAF"/>
-                            <constraint firstItem="whY-fw-1eB" firstAttribute="top" secondItem="G0h-g2-M9O" secondAttribute="bottom" constant="20" id="EGi-na-HNV"/>
-                            <constraint firstItem="zED-Fu-TRx" firstAttribute="height" secondItem="whY-fw-1eB" secondAttribute="height" id="EKq-QG-hCH"/>
-                            <constraint firstItem="zED-Fu-TRx" firstAttribute="width" secondItem="whY-fw-1eB" secondAttribute="width" id="Hig-0u-IhY"/>
-                            <constraint firstItem="whY-fw-1eB" firstAttribute="width" secondItem="G0h-g2-M9O" secondAttribute="width" id="HsR-jd-f46"/>
-                            <constraint firstItem="zED-Fu-TRx" firstAttribute="height" secondItem="whY-fw-1eB" secondAttribute="height" id="LS6-BT-jwy"/>
-                            <constraint firstItem="VE3-H6-XUa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="O9e-KQ-xeM"/>
-                            <constraint firstItem="BX2-ks-VPG" firstAttribute="width" secondItem="VE3-H6-XUa" secondAttribute="width" id="YaB-Vo-aha"/>
-                            <constraint firstItem="eD5-75-W84" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Zjm-nE-lKG"/>
-                            <constraint firstItem="G0h-g2-M9O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cKs-x3-ljw"/>
-                            <constraint firstItem="whY-fw-1eB" firstAttribute="width" secondItem="G0h-g2-M9O" secondAttribute="width" id="cTM-WE-iVI"/>
-                            <constraint firstItem="zED-Fu-TRx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dqe-ny-T81"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eD5-75-W84" secondAttribute="bottom" id="eIY-fF-85o"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="whY-fw-1eB" secondAttribute="leading" id="hPg-Ke-TWg"/>
-                            <constraint firstItem="zED-Fu-TRx" firstAttribute="top" secondItem="whY-fw-1eB" secondAttribute="bottom" constant="20" id="i8M-iN-O1E"/>
-                            <constraint firstItem="BX2-ks-VPG" firstAttribute="top" secondItem="VE3-H6-XUa" secondAttribute="bottom" constant="20" id="jyk-xO-Mmy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BX2-ks-VPG" secondAttribute="trailing" id="nT5-Qs-w0H"/>
-                            <constraint firstItem="whY-fw-1eB" firstAttribute="height" secondItem="G0h-g2-M9O" secondAttribute="height" id="pdF-tu-pm2"/>
-                            <constraint firstItem="eD5-75-W84" firstAttribute="width" secondItem="BX2-ks-VPG" secondAttribute="width" id="vOB-SN-WcK"/>
-                            <constraint firstItem="eD5-75-W84" firstAttribute="top" secondItem="BX2-ks-VPG" secondAttribute="bottom" constant="20" id="vRu-j2-8tv"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="HsR-jd-f46"/>
-                                <exclude reference="EKq-QG-hCH"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <segue destination="1jD-tO-cja" kind="unwind" identifier="unwindIdentifier" unwindAction="unwindToVC:" id="nqX-eS-jHo"/>
@@ -138,7 +104,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="1jD-tO-cja" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="487" y="-671"/>
+            <point key="canvasLocation" x="157" y="-647"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="5AD-o8-HhM">
@@ -178,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXm-0x-bEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210" y="-123"/>
+            <point key="canvasLocation" x="-588" y="-235"/>
         </scene>
     </scenes>
     <resources>
