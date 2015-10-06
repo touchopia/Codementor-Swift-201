@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4In-2c-Azp">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Background View Controller-->
@@ -17,94 +17,130 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-g2-M9O">
-                                <rect key="frame" x="20" y="28" width="200" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-0a-RIp">
+                                <rect key="frame" x="318" y="28" width="1136" height="1170"/>
+                                <subviews>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvd-y0-tKD">
+                                        <rect key="frame" x="0.0" y="0.0" width="1136" height="940"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="0ta-qe-Z1x"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="fun_thumb"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="0ta-qe-Z1x"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vgU-uN-aqB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeD-5N-rxI">
+                                        <rect key="frame" x="0.0" y="955" width="1136" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="g5H-3r-8dB"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="castle_thumb"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="g5H-3r-8dB"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3L-Yh-Bmv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ke-HR-17e">
+                                        <rect key="frame" x="0.0" y="1070" width="1136" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="7aK-WL-OX0"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="red_thumb"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="7aK-WL-OX0"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZH8-pa-ApH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="d6Q-Ew-qQJ"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="city_thumb"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="d6Q-Ew-qQJ"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zED-Fu-TRx">
-                                <rect key="frame" x="20" y="480" width="200" height="100"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="CKm-4s-ANT">
+                                <rect key="frame" x="44" y="40" width="200" height="330"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dix-z1-Igk">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="q2A-it-XEk"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="blue_thumb"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="q2A-it-XEk"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ifg-jI-emK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-g2-M9O">
+                                        <rect key="frame" x="0.0" y="115" width="200" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="d6Q-Ew-qQJ"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="city_thumb"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="d6Q-Ew-qQJ"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UsS-zF-fsa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwP-h6-5iL">
+                                        <rect key="frame" x="0.0" y="230" width="200" height="100"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="1ju-8w-Uws"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="green_thumb"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="1ju-8w-Uws"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFH-qR-Hd0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1uM-VD-SXW"/>
-                                    <constraint firstAttribute="height" constant="100" id="c73-V8-O0h"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="g7a-qR-z9a"/>
-                                    <constraint firstAttribute="width" constant="200" id="uR0-jw-Ol1"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="fun_thumb"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="1uM-VD-SXW"/>
-                                        <exclude reference="c73-V8-O0h"/>
-                                        <exclude reference="g7a-qR-z9a"/>
-                                        <exclude reference="uR0-jw-Ol1"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VE3-H6-XUa">
-                                <rect key="frame" x="380" y="28" width="200" height="100"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="JFV-yy-leD"/>
-                                    <constraint firstAttribute="width" constant="200" id="zHC-Mh-wX4"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="blue_thumb"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JFV-yy-leD"/>
-                                        <exclude reference="zHC-Mh-wX4"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whY-fw-1eB">
-                                <rect key="frame" x="20" y="250" width="200" height="100"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="castle_thumb"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eD5-75-W84">
-                                <rect key="frame" x="380" y="480" width="200" height="100"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="MKS-rU-XCf"/>
-                                    <constraint firstAttribute="height" constant="100" id="SpF-0n-ILJ"/>
-                                    <constraint firstAttribute="height" constant="100" id="Z4V-55-Qed"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="m9V-iL-mYb"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="green_thumb"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="MKS-rU-XCf"/>
-                                        <exclude reference="SpF-0n-ILJ"/>
-                                        <exclude reference="Z4V-55-Qed"/>
-                                        <exclude reference="m9V-iL-mYb"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BX2-ks-VPG">
-                                <rect key="frame" x="380" y="250" width="200" height="100"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="red_thumb"/>
-                            </button>
+                            </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CKm-4s-ANT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9jW-FF-jyE"/>
+                            <constraint firstItem="CKm-4s-ANT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="gUd-LY-9H3"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <segue destination="1jD-tO-cja" kind="unwind" identifier="unwindIdentifier" unwindAction="unwindToVC:" id="nqX-eS-jHo"/>
+                        <segue destination="1jD-tO-cja" kind="unwind" identifier="exitVCIdentifier" unwindAction="exitVC:" id="e6Y-h8-qFh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="1jD-tO-cja" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="157" y="-647"/>
+            <point key="canvasLocation" x="236" y="-994"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="5AD-o8-HhM">
@@ -119,40 +155,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPL-di-zHU">
-                                <rect key="frame" x="220" y="280" width="160" height="40"/>
+                                <rect key="frame" x="215" y="281" width="171" height="38"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="3YY-2N-Fon"/>
-                                    <constraint firstAttribute="width" constant="160" id="p9V-zP-JSe"/>
+                                    <constraint firstAttribute="width" constant="171" id="CXS-4H-09q"/>
+                                    <constraint firstAttribute="height" constant="38" id="Np9-Xl-sxz"/>
                                 </constraints>
                                 <state key="normal" title="Background Chooser">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="ChoooserIdentifier" id="OaA-xK-gUF"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="chooseBackgroundIdentifier" modalTransitionStyle="crossDissolve" id="PZ5-U5-XQb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wPL-di-zHU" firstAttribute="centerY" secondItem="ps3-e1-tG7" secondAttribute="centerY" id="Bp0-cV-wuM"/>
-                            <constraint firstItem="wPL-di-zHU" firstAttribute="centerX" secondItem="ps3-e1-tG7" secondAttribute="centerX" id="faG-PV-zRU"/>
+                            <constraint firstItem="wPL-di-zHU" firstAttribute="centerX" secondItem="ps3-e1-tG7" secondAttribute="centerX" id="LZZ-O7-SWj"/>
+                            <constraint firstItem="wPL-di-zHU" firstAttribute="centerY" secondItem="ps3-e1-tG7" secondAttribute="centerY" id="VbU-6Q-7ME"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXm-0x-bEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="-235"/>
+            <point key="canvasLocation" x="-387" y="-994"/>
         </scene>
     </scenes>
     <resources>
-        <image name="blue_thumb" width="1024" height="768"/>
-        <image name="castle_thumb" width="1136" height="940"/>
-        <image name="city_thumb" width="1136" height="940"/>
-        <image name="fun_thumb" width="1136" height="940"/>
-        <image name="green_thumb" width="1024" height="768"/>
+        <image name="blue_thumb" width="200" height="100"/>
+        <image name="castle_thumb" width="200" height="100"/>
+        <image name="city_thumb" width="200" height="100"/>
+        <image name="fun_thumb" width="200" height="100"/>
+        <image name="green_thumb" width="200" height="100"/>
         <image name="red_thumb" width="200" height="100"/>
     </resources>
 </document>

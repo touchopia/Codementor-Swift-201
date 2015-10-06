@@ -9,37 +9,46 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    var backgroundImageString : String = ""
+    
     var backgroundImageView : UIImageView! = UIImageView(frame: CGRectZero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateBackgroundImage()
+        updateBackgroundImage("")
     }
-
-    @IBAction func unwindToVC(segue:UIStoryboardSegue) {
-        if segue.identifier == "unwindIdentifier" {
+    
+    @IBAction func exitVC(segue: UIStoryboardSegue) {
+        print("I am in the exitVC method")
+        
+        if segue.identifier == kExitIdentifier {
+            
             if let controller = segue.sourceViewController as? BackgroundViewController {
-                backgroundImageString = controller.backgroundImageString
-                updateBackgroundImage()
+                updateBackgroundImage(controller.backgroundImageString)
             }
         }
     }
+
+//    @IBAction func unwindToVC(segue:UIStoryboardSegue) {
+//        if segue.identifier == "unwindIdentifier" {
+//            if let controller = segue.sourceViewController as? BackgroundViewController {
+//                backgroundImageString = controller.backgroundImageString
+//                updateBackgroundImage()
+//            }
+//        }
+//    }
     
-    func updateBackgroundImage() {
+    func updateBackgroundImage(var imageName: String) {
         
         backgroundImageView.removeFromSuperview()
         
-        if backgroundImageString == "" {
-            backgroundImageString = "blueBackground"
+        if imageName == "" {
+            imageName = "blueBackground"
         }
         
-        
-        backgroundImageView = UIImageView(image: UIImage(named: backgroundImageString))
+        backgroundImageView = UIImageView(image: UIImage(named: imageName))
         backgroundImageView?.frame = view.frame
         backgroundImageView?.contentMode = .ScaleAspectFill
-        
         view.insertSubview(backgroundImageView!, atIndex: 0)
     }
     
