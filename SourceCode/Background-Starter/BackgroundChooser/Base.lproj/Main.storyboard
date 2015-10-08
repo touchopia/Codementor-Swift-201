@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4In-2c-Azp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15B30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4In-2c-Azp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-0a-RIp">
-                                <rect key="frame" x="318" y="28" width="1136" height="1170"/>
+                                <rect key="frame" x="318" y="28" width="200" height="262"/>
                                 <subviews>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvd-y0-tKD">
-                                        <rect key="frame" x="0.0" y="0.0" width="1136" height="940"/>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvd-y0-tKD">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="0ta-qe-Z1x"/>
@@ -36,8 +36,8 @@
                                             <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vgU-uN-aqB"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeD-5N-rxI">
-                                        <rect key="frame" x="0.0" y="955" width="1136" height="100"/>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeD-5N-rxI">
+                                        <rect key="frame" x="0.0" y="47" width="200" height="100"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="g5H-3r-8dB"/>
@@ -52,8 +52,8 @@
                                             <action selector="chooseBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3L-Yh-Bmv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ke-HR-17e">
-                                        <rect key="frame" x="0.0" y="1070" width="1136" height="100"/>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ke-HR-17e">
+                                        <rect key="frame" x="0.0" y="162" width="200" height="100"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="7aK-WL-OX0"/>

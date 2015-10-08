@@ -1,92 +1,151 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15B30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vki-8v-rkc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="sDt-tD-FED">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StickersApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UMJ-1w-qyH" customClass="ViewController" customModule="StickersApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fnm-PV-jEC"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Pn-Rz-ULW"/>
+                        <viewControllerLayoutGuide type="top" id="bq3-XW-Qpr"/>
+                        <viewControllerLayoutGuide type="bottom" id="ePk-ig-SpY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <view key="view" contentMode="scaleToFill" id="6Na-oe-YRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U1-qf-OIq">
-                                <rect key="frame" x="0.0" y="276" width="568" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDu-e9-tYW">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <animations/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rr9-Eg-d7M"/>
-                                    <barButtonItem image="icon-plus" id="R4F-xk-arO">
+                                    <barButtonItem image="icon-bg" id="f37-hy-174">
                                         <connections>
-                                            <action selector="actionAddImage:" destination="BYZ-38-t0r" id="RZX-cV-iB7"/>
+                                            <segue destination="Cue-g7-iHV" kind="presentation" identifier="ShowBackgound" id="Yic-BL-hPB"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="qU7-9F-eSq"/>
-                                    <barButtonItem image="icon-minus" id="27H-ed-sOw">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mAi-z6-pQL"/>
+                                    <barButtonItem image="icon-plus" id="gea-l5-xFb">
                                         <connections>
-                                            <action selector="actionDeleteImage:" destination="BYZ-38-t0r" id="Zcf-Fd-bXT"/>
+                                            <action selector="actionAddImage:" destination="UMJ-1w-qyH" id="996-5Q-Qc3"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1fG-tL-wVe"/>
-                                    <barButtonItem image="icon-bg" id="YNR-Wt-8kc">
+                                    <barButtonItem image="icon-minus" id="Uop-2d-CbK">
                                         <connections>
-                                            <segue destination="RAU-Sw-ewj" kind="modal" identifier="ShowBackgroundChooser" id="BrO-1t-RV4"/>
+                                            <action selector="actionDeleteImage:" destination="UMJ-1w-qyH" id="thD-LT-Zj3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="R89-9D-ekm"/>
+                                    <barButtonItem title="Save" id="oTD-2z-8s6">
+                                        <connections>
+                                            <action selector="screenshot:" destination="UMJ-1w-qyH" id="Ps1-U4-fl2"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="barTintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2Pn-Rz-ULW" firstAttribute="top" secondItem="4U1-qf-OIq" secondAttribute="bottom" id="En6-fX-1Ji"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4U1-qf-OIq" secondAttribute="trailing" constant="-20" id="aT7-2g-Fq3"/>
-                            <constraint firstItem="4U1-qf-OIq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fjc-lK-l77"/>
+                            <constraint firstItem="sDu-e9-tYW" firstAttribute="width" secondItem="6Na-oe-YRQ" secondAttribute="width" id="Fw0-6L-8OF"/>
+                            <constraint firstAttribute="trailing" secondItem="sDu-e9-tYW" secondAttribute="trailing" id="GlH-AZ-KV4"/>
+                            <constraint firstItem="sDu-e9-tYW" firstAttribute="leading" secondItem="6Na-oe-YRQ" secondAttribute="leading" id="osX-2u-C8G"/>
+                            <constraint firstItem="ePk-ig-SpY" firstAttribute="top" secondItem="sDu-e9-tYW" secondAttribute="bottom" id="yCr-VP-gs6"/>
                         </constraints>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationItem key="navigationItem" id="62w-Ex-kkP"/>
                     <connections>
-                        <outlet property="toolbar" destination="4U1-qf-OIq" id="ezm-7V-3vo"/>
+                        <outlet property="toolbar" destination="sDu-e9-tYW" id="3lF-sx-GgT"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RbP-91-6Pz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101" y="-92"/>
+            <point key="canvasLocation" x="-4890" y="-4546"/>
         </scene>
         <!--Background View Controller-->
-        <scene sceneID="HW1-Iq-mr5">
+        <scene sceneID="Vsk-bU-GXS">
             <objects>
-                <viewController id="RAU-Sw-ewj" customClass="BackgroundViewController" customModule="StickersApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cue-g7-iHV" customClass="BackgroundViewController" customModule="StickersApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WAA-pF-0Yh"/>
-                        <viewControllerLayoutGuide type="bottom" id="w1S-HZ-bCZ"/>
+                        <viewControllerLayoutGuide type="top" id="5dY-gr-fDw"/>
+                        <viewControllerLayoutGuide type="bottom" id="kvd-IL-6K5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dpP-Y2-8Jf">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <view key="view" contentMode="scaleToFill" id="SSv-uu-bvr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tmv-ko-fef">
+                                <rect key="frame" x="200" y="130" width="200" height="340"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtt-kh-oX2">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                                        <animations/>
+                                        <state key="normal" image="castle_thumb"/>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="Cue-g7-iHV" eventType="touchUpInside" id="JZ1-HZ-Oig"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqb-TJ-qJH">
+                                        <rect key="frame" x="0.0" y="120" width="200" height="100"/>
+                                        <animations/>
+                                        <state key="normal" image="city_thumb"/>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="Cue-g7-iHV" eventType="touchUpInside" id="LUx-bp-VK1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEY-6i-hdd">
+                                        <rect key="frame" x="0.0" y="240" width="200" height="100"/>
+                                        <animations/>
+                                        <state key="normal" image="fun_thumb"/>
+                                        <connections>
+                                            <action selector="chooseBackground:" destination="Cue-g7-iHV" eventType="touchUpInside" id="qh4-6V-KiP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tmv-ko-fef" firstAttribute="centerX" secondItem="SSv-uu-bvr" secondAttribute="centerX" id="JyN-7h-ldE"/>
+                            <constraint firstItem="tmv-ko-fef" firstAttribute="centerY" secondItem="SSv-uu-bvr" secondAttribute="centerY" id="aiu-5J-YLs"/>
+                        </constraints>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="1a8-za-WTO" kind="unwind" identifier="unwindIdentifier" unwindAction="unwindToVC:" id="dsH-sC-r9e"/>
+                        <segue destination="gCi-ua-ku7" kind="unwind" identifier="exitVCIdentifier" unwindAction="exitVC:" id="Pdx-ta-URa"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7wd-WV-B4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="1a8-za-WTO" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JN-Bk-50y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gCi-ua-ku7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-21" y="377"/>
+            <point key="canvasLocation" x="-4040" y="-4546"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cJw-ml-67U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vki-8v-rkc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XWO-jP-HTC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UMJ-1w-qyH" kind="relationship" relationship="rootViewController" id="bef-cH-yyF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hKl-q9-etE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5702" y="-4546"/>
         </scene>
     </scenes>
     <resources>
+        <image name="castle_thumb" width="200" height="100"/>
+        <image name="city_thumb" width="200" height="100"/>
+        <image name="fun_thumb" width="200" height="100"/>
         <image name="icon-bg" width="32" height="24"/>
         <image name="icon-minus" width="32" height="32"/>
         <image name="icon-plus" width="32" height="32"/>
