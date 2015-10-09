@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         
         // 1 choose random image between 1 and 7
         
-        let randomNumber = RandomInt(min: 1, max: 7)
+        let randomNumber = RandomInt(min: 1, max: kMaxStickers)
         //let randomNumber = Int(arc4random_uniform(6) +  1)
         
         // 2 Use String Interpolation to get the image
